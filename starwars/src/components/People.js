@@ -10,6 +10,7 @@ const Card = styled.div`
     width:30%;
     text-align:center;
     margin:20px auto;
+    flex-direction:column;
     flex-wrap:wrap;
     align-items:center;
     justify-content:space-between;
@@ -25,12 +26,10 @@ const Card = styled.div`
 const People = props => {
     return (
         <Card>
-            <div className="people-container">
                 <h2>{props.name}</h2>
                 <p>Gender: {props.gender}</p>
                 <p>Birth Year: {props.date}</p>
                 <p>Height: {props.height}</p>
-            </div>
         </Card>
     );
 };
